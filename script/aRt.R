@@ -37,6 +37,7 @@ p[[i]] <- use_seed(1) %>%
 
 wrap_plots(p)
 
+ggsave("artworks/test1.pdf")
 
 email <- render_email("script/email.Rmd")
 
@@ -47,3 +48,8 @@ email %>%
               subject = "aRt project",
               credentials = creds_key(id = "Marco Chiapello")
     )
+
+################################################################################
+# Git
+system(paste0("git commit -am'#1 Color palette: ", col[1], " and ", col[2], "'"))
+system("git push")
