@@ -51,5 +51,6 @@ email %>%
 
 ################################################################################
 # Git
-system(paste0("git commit -am'#1 Color palette: ", col[1], " and ", col[2], "'"))
+system("git add .")
+system(paste0("git commit -m'#1 Color palette: ", col[1], " and ", col[2], "'"))
 system("git push")
