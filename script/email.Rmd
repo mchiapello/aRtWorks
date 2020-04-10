@@ -1,0 +1,10 @@
+---
+output: blastula_email
+---
+
+Finito!
+
+```{r echo = FALSE}
+p[[1]]
+
+```
